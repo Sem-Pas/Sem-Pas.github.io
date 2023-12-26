@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ROOS</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Kies je profiel</h1>
+      <div class="profiles">
+        <button onclick="selectProfile('Derk')">Derk</button>
+        <button onclick="selectProfile('Sabine')">Sabine</button>
+        <button onclick="selectProfile('Sem')">Sem</button>
+        <button onclick="selectProfile('Noah')">Noah</button>
+        <button onclick="selectProfile('Cato')">Cato</button>
+      </div>
+    </div>
+
+    <div class="schedule-container" style="display: none">
+      <header>
+        <div>
+          <h1>ROOS SCHEMA</h1>
+          <span id="welcome-text">Welkom</span>
+        </div>
+
+        <div class="week-details">
+          <span id="current-date">DD/MM</span>
+        </div>
+      </header>
+
+      <div class="week-controls">
+        <button onclick="prevWeek()">Vorige Week</button>
+        <span id="week-info"></span>
+        <button onclick="nextWeek()">Volgende Week</button>
+        <button onclick="goToToday()">Vandaag</button>
+      </div>
+
+      <div id="schedule-grid" class="schedule-grid"></div>
+
+      <!-- Nieuwe knop voor terug naar hoofdpagina -->
+      <button onclick="goToMainPage()">Terug naar hoofdpagina</button>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

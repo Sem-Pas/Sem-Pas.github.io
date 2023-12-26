@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #808bae;
+}
+
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.profiles button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.schedule-container,
+.schedule-overview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  background-color: #141b32;
+  color: #fff;
+}
+
+#schedule-grid,
+#schedule-overview {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1px;
+  background-color: #3aafa9;
+  border-color: #3aafa9;
+}
+
+.schedule-cell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.schedule-cell:hover {
+  background-color: #eee;
+}
+
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.week-controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.scheduled-cell {
+  background-color: #cce5ff;
+}
+
+.current-day {
+  background-color: #ffcf86;
+}
+
+button {
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 10rem;
+}
+
+#week-info {
+  margin-top: 2.75rem;
+}
+
+#current-date {
+  margin-right: 2rem;
+  font-size: 30px;
+}
+
+.week-details {
+  margin-top: 1rem;
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
+#welcome-text {
+  margin-left: 1rem;
+}
