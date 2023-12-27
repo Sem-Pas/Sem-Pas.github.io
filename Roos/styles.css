@@ -1,8 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #808bae;
+  background: linear-gradient(
+    to right,
+    #1a237e,
+    #009688
+  ); /* Achtergrondkleur met gradiënt */
+  color: #fff; /* Tekstkleur */
 }
 
 .login-container {
@@ -15,6 +20,14 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #3498db; /* Knop achtergrondkleur */
+  color: #fff; /* Knop tekstkleur */
+  border: none;
+  border-radius: 5px;
+}
+
+.profiles button:hover {
+  background-color: #2980b9; /* Knop achtergrondkleur bij hover */
 }
 
 .schedule-container,
@@ -29,51 +42,76 @@ header {
   justify-content: space-between;
   padding: 20px;
   width: 100%;
-  background-color: #141b32;
+  background-color: #ff7c25;
+  background-color: transparent;
   color: #fff;
 }
 
+/* Aangepaste stijlen voor het schema */
 #schedule-grid,
 #schedule-overview {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 1px;
-  background-color: #3aafa9;
-  border-color: #3aafa9;
+  background-color: #283593; /* Donkerblauwe achtergrondkleur van het schema */
+  border-color: #283593;
 }
 
 .schedule-cell {
-  border: 1px solid #ccc;
+  border: 1px solid #303f9f; /* Donkerblauwe rand voor cel */
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  background-color: #000f7e; /* Donkerblauwe cel achtergrondkleur */
+  transition: background-color 0.3s; /* Voeg overgang toe voor celkleur bij hover */
 }
 
 .schedule-cell:hover {
-  background-color: #eee;
-}
-
-.week-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  background-color: #303f9f; /* Donkerder blauwe cel achtergrondkleur bij hover */
 }
 
 .week-controls button {
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
+  background-color: #303f9f; /* Donkerblauwe knop achtergrondkleur */
+  color: #fff; /* Knop tekstkleur */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Voeg overgang toe voor knopkleur bij hover */
+}
+
+.week-controls button:hover {
+  background-color: #283593; /* Donkerder blauwe knop achtergrondkleur bij hover */
 }
 
 .scheduled-cell {
-  background-color: #cce5ff;
+  background-color: #303f9f; /* Donkerblauwe achtergrondkleur van geplande cel */
+  color: #fff; /* Tekstkleur van geplande cel */
 }
 
 .current-day {
-  background-color: #ffcf86;
+  background-color: #b188fd;
 }
 
-button {
+.profiles button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db; /* Knop achtergrondkleur */
+  color: #fff; /* Knop tekstkleur */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Voeg overgang toe voor knopkleur bij hover */
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 10rem;
+}
+
+.profiles button:hover {
+  background-color: #2980b9; /* Knop achtergrondkleur bij hover */
   margin-top: 2rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
@@ -99,4 +137,12 @@ h1 {
 
 #welcome-text {
   margin-left: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 10rem;
+  margin-bottom: 1rem;
 }

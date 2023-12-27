@@ -26,6 +26,15 @@ function selectProfile(profile) {
   selectedProfile = profile;
   welcomeText.innerText = `Welkom ${selectedProfile}`;
   showSchedule();
+  updateHeaderStyle();
+}
+
+function goToMainPage() {
+  loginContainer.style.display = 'block';
+  scheduleContainer.style.display = 'none';
+  selectedProfile = ''; // Reset geselecteerd profiel
+  welcomeText.innerText = 'Kies je profiel';
+  updateHeaderStyle();
 }
 
 function showSchedule() {
@@ -212,13 +221,6 @@ function goToToday() {
   updateWeekInfo();
   updateDate();
   updateSchedule();
-}
-
-function goToMainPage() {
-  loginContainer.style.display = 'block';
-  scheduleContainer.style.display = 'none';
-  selectedProfile = ''; // Reset geselecteerd profiel
-  welcomeText.innerText = 'Kies je profiel';
 }
 
 // Initialiseer het schema bij het laden van de pagina
