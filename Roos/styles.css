@@ -147,52 +147,35 @@ button {
   margin-bottom: 1rem;
 }
 
+/* Media Query voor schermen met een maximale breedte van 480px (mobiele telefoons) */
 @media only screen and (max-width: 480px) {
   body {
-    font-size: 14px;
+    font-size: 14px; /* Pas de lettergrootte aan voor kleinere schermen */
   }
 
   .login-container {
-    margin-top: 20px;
+    margin-top: 20px; /* Vergroot de bovenmarge voor het login-container op kleinere schermen */
   }
 
   .profiles button {
-    font-size: 14px;
-    margin: 5px;
+    font-size: 14px; /* Pas de knopgrootte aan voor kleinere schermen */
+    margin: 5px; /* Verminder de marge tussen knoppen op kleinere schermen */
   }
 
   .week-controls button {
-    font-size: 12px;
-    padding: 3px 6px;
+    font-size: 12px; /* Pas de knopgrootte aan voor kleinere schermen */
+    padding: 3px 6px; /* Verminder de opvulling van de knoppen op kleinere schermen */
   }
 
   #current-date {
-    font-size: 20px;
+    font-size: 20px; /* Pas de datumgrootte aan voor kleinere schermen */
   }
 
   #week-info {
-    margin-top: 1.5rem;
+    margin-top: 1.5rem; /* Vergroot de bovenmarge voor weekinformatie op kleinere schermen */
   }
 
   h1 {
-    margin-left: 0.5rem;
-  }
-
-  /* Aanpassing van het rooster voor mobiele telefoons */
-  .schedule-cell {
-    display: none; /* Verberg alle roostercellen op mobiele telefoons */
-  }
-
-  .schedule-cell[data-day='1'],
-  .schedule-cell[data-day='2'],
-  .schedule-cell[data-day='3'] {
-    display: block; /* Toon alleen de roostercellen voor de eerste 3 dagen op mobiele telefoons */
-  }
-
-  .schedule-grid {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* Pas het rooster aan voor mobiele weergave */
+    margin-left: 0.5rem; /* Pas de marge aan voor koppen op kleinere schermen */
   }
 }
