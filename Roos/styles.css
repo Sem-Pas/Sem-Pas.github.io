@@ -146,3 +146,36 @@ button {
   border-radius: 10rem;
   margin-bottom: 1rem;
 }
+
+/* Media Query voor schermen met een maximale breedte van 480px (mobiele telefoons) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Pas de lettergrootte aan voor kleinere schermen */
+  }
+
+  .login-container {
+    margin-top: 20px; /* Vergroot de bovenmarge voor het login-container op kleinere schermen */
+  }
+
+  .profiles button {
+    font-size: 14px; /* Pas de knopgrootte aan voor kleinere schermen */
+    margin: 5px; /* Verminder de marge tussen knoppen op kleinere schermen */
+  }
+
+  .week-controls button {
+    font-size: 12px; /* Pas de knopgrootte aan voor kleinere schermen */
+    padding: 3px 6px; /* Verminder de opvulling van de knoppen op kleinere schermen */
+  }
+
+  #current-date {
+    font-size: 20px; /* Pas de datumgrootte aan voor kleinere schermen */
+  }
+
+  #week-info {
+    margin-top: 1.5rem; /* Vergroot de bovenmarge voor weekinformatie op kleinere schermen */
+  }
+
+  h1 {
+    margin-left: 0.5rem; /* Pas de marge aan voor koppen op kleinere schermen */
+  }
+}
